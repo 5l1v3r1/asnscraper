@@ -1,4 +1,4 @@
-# asnscraper
+## asnscraper
 
 # Setup
 git clone https://github.com/UN5T48L3/asnscraper
@@ -8,6 +8,11 @@ pip3 install bs4
 pip3 install requests
 
 # Run
+
+Put AS numbers in the asns.txt 
+
+and
+
 python3 asnscraper.py
 
 All ip ranges will be added into your ranges.lst in several seconds...
