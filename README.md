@@ -2,7 +2,9 @@
 
 # Setup
 git clone https://github.com/UN5T48L3/asnscraper
+
 pip3 install bs4
+
 pip3 install requests
 
 # Run
