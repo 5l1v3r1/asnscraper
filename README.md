@@ -13,7 +13,7 @@ Put AS numbers in the asns.txt
 
 and
 
-python3 asnscraper.py
+python3 asn.py
 
 All ip ranges will be added into your ranges.lst in several seconds...
 
