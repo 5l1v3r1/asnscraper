@@ -22,8 +22,8 @@ with open('asns.txt') as f:
                 printstring = line+'\n'
                 if 'AS' not in printstring:
                     output.write(printstring)
-        print(asn+'\n')
+        print(as_base+asn+'\n')
         os.system("cat ranges.txt | grep -v h >> ranges.lst") 
         os.system("rm -rf ranges.txt") 
         os.system("touch ranges.txt") 
-print ('script finished')
+print ('All results has been saved to: ranges.lst')
