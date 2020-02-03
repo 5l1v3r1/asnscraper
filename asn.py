@@ -1,9 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-import subprocess, sys, time, re
+import subprocess, sys, re
+import os
 
-def run(cmd):
-    subprocess.call(cmd, shell=True)
     
 url_base = 'http://ipinfo.io/'
 as_base = 'AS'
@@ -24,5 +23,7 @@ with open('asns.txt') as f:
                 if 'AS' not in printstring:
                     output.write(printstring)
         print(asn+'\n')
-        run('cat ranges.txt | grep -v https > ranges.lst')
+        os.system("cat ranges.txt | grep -v h >> ranges.lst") 
+        os.system("rm -rf ranges.txt") 
+        os.system("touch ranges.txt") 
 print ('script finished')
