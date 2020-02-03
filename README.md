@@ -11,7 +11,7 @@ pip3 install requests
 
 Create a list with asn numbers and
 
-python3 asn.py asns.txt
+python3 asn.py yourasnlist.txt
 
 All ip ranges will be added into your ranges.lst in several seconds...
 
